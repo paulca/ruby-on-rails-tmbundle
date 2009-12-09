@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= f.submit ${1:"${2:Save}"} %&gt; ${3:or &lt;%= link_to ${4:"${5:Cancel}"}, ${6:my_code_samples_path} %&gt;}</string>
+	<key>name</key>
+	<string>Save or Cancel</string>
+	<key>scope</key>
+	<string>text.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>soc</string>
+	<key>uuid</key>
+	<string>0B97D699-449C-46AE-95BC-0D089C076D6D</string>
+</dict>
+</plist>
