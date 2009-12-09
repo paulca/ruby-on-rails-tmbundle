@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def index
+  ${1:@}${2:object} = ${3:${2/(^[A-Za-z])|_([a-zA-Z])|([s]$)/(?1:\u$1)(?2:\u$2)(?3:)/g}}.all
+end</string>
+	<key>name</key>
+	<string>index</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>index</string>
+	<key>uuid</key>
+	<string>8AA91C58-6164-47E5-969B-F63E7782B352</string>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def update
+  ${1:@}${2:object} = ${3:${2/(^[A-Za-z])|_([a-zA-Z])|([s]$)/(?1:\u$1)(?2:\u$2)(?3:)/g}}.find(params[:id])
+  if $1$2.update_attributes(params[:$2])
+    redirect_to ${4:$2s_path}
+  else
+    render :edit
+  end
+end</string>
+	<key>name</key>
+	<string>update</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>update</string>
+	<key>uuid</key>
+	<string>940254B7-18BF-406D-867C-828B5ADF38E8</string>
+</dict>
+</plist>

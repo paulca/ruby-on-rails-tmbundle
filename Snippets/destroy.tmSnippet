@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def destroy
+  ${1:@}${2:object} = ${3:${2/(^[A-Za-z])|_([a-zA-Z])|([s]$)/(?1:\u$1)(?2:\u$2)(?3:)/g}}.find(params[:id])
+  $1$2.destroy
+  redirect_to ${4:$2s_path}
+end</string>
+	<key>name</key>
+	<string>destroy</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>destroy</string>
+	<key>uuid</key>
+	<string>B904544D-B70A-433C-BC49-EFF55A4BC51F</string>
+</dict>
+</plist>

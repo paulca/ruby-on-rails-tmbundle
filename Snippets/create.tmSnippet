@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def create
+  ${1:@}${2:object} = ${3:${2/(^[A-Za-z])|_([a-zA-Z])|([s]$)/(?1:\u$1)(?2:\u$2)(?3:)/g}}.new(params[:$2])
+  if $1$2.save
+    redirect_to ${4:$2s_path}
+  else
+    render :new
+  end
+end</string>
+	<key>name</key>
+	<string>create</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>create</string>
+	<key>uuid</key>
+	<string>59176964-964A-450A-99D9-6B756CCF10E1</string>
+</dict>
+</plist>
