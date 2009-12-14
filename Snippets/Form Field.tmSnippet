@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;%= f.label :${1:field_name}${2:, ${3:"Field Name"}} %&gt; &lt;%= f.${4:text_field}, :$1 %&gt; &lt;br /&gt;</string>
+	<string>&lt;%= f.label :${1:field_name}${2:, ${3:"Field Name"}} %&gt; &lt;%= f.${4:text_field} :$1 %&gt; &lt;br /&gt;</string>
 	<key>name</key>
 	<string>Form Field</string>
 	<key>scope</key>
